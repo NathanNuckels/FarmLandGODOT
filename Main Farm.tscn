@@ -1,11 +1,35 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Tiles/Farm Group 4x2 Water.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tiles/GrassTile.tscn" type="PackedScene" id=2]
 
 [node name="Main Farm" type="Node2D"]
 
 [node name="Farm Group 4x2 Water" parent="." instance=ExtResource( 1 )]
-position = Vector2( 242, 195 )
+position = Vector2( 200, 200 )
 
 [node name="Farm Group 4x2 Water2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 542, 195 )
+position = Vector2( 500, 200 )
+
+[node name="Grass" type="Node2D" parent="."]
+
+[node name="GrassTile" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 100 )
+
+[node name="GrassTile3" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 150 )
+
+[node name="GrassTile4" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 200 )
+
+[node name="GrassTile5" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 250 )
+
+[node name="GrassTile6" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 300 )
+
+[node name="GrassTile7" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 100, 350 )
+
+[node name="GrassTile2" parent="Grass" instance=ExtResource( 2 )]
+position = Vector2( 150, 100 )
